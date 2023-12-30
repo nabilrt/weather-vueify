@@ -1,6 +1,6 @@
 # Vue 3 + Vite
 
-<h2>Technology: Vue 3</h2>
+<small>Technology: Vue 3</small>
 <small>Bundler: Vite</small>
 
 Demo:

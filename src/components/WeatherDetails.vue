@@ -1,6 +1,4 @@
 <script setup>
-
-
 defineProps({
   weatherData: {
     temp_f: String,
@@ -99,6 +97,5 @@ const updatedImageUrl = (imageUrl) => {
         </div>
       </div>
     </div>
-   
   </div>
 </template>

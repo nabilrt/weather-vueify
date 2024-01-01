@@ -1,5 +1,5 @@
 <template>
-  <div class="flex space-x-3 m-auto">
+  <div class="m-auto flex space-x-3">
     <img src="/logo.png" height="250px" width="250px" />
   </div>
 </template>

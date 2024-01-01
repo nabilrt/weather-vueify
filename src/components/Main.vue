@@ -50,7 +50,7 @@ onMounted(() => {
         type="text"
         v-model="city"
         placeholder="Type any city name..."
-        class="px-6 py-4 font-semibold text-sm border border-[#41b883] bg-[#444444] rounded-full w-full white-[#fc8eac] active:border-[#41b883] text-white"
+        class="white-[#fc8eac] w-full rounded-full border border-[#41b883] bg-[#444444] px-6 py-4 text-sm font-semibold text-white active:border-[#41b883]"
       />
       <button
         className="px-4 py-2 rounded-full font-semibold text-sm shadow-md disabled:opacity-50 disabled:cursor-not-allowed text-white bg-[#444444] hover:drop-shadow-lg drop-shadow-[#5affb5]"
@@ -60,13 +60,13 @@ onMounted(() => {
         <SearchLogo />
       </button>
     </div>
-    <div v-if="loading" class="items-center justify-center flex">
+    <div v-if="loading" class="flex items-center justify-center">
       <skew-loader :loading="loading" color="#5affb5" size="30px"></skew-loader>
     </div>
     <div v-else>
       <div
         v-if="error"
-        class="items-center justify-center flex text-2xl text-white font-bold uppercase"
+        class="flex items-center justify-center text-2xl font-bold uppercase text-white"
       >
         {{ error }}
       </div>
@@ -85,10 +85,10 @@ onMounted(() => {
       </div>
     </div>
     <div
-      class="m-auto flex items-center space-x-6 text-white font-bold text-xl hover:drop-shadow-lg drop-shadow-[#5affb5]"
+      class="m-auto flex items-center space-x-6 text-xl font-bold text-white drop-shadow-[#5affb5] hover:drop-shadow-lg"
     >
       <span>Made With </span>
-      <img src="/vue.svg" height="100px" width="100px" />
+      <img src="/vue.svg" height="100px" width="100px" class="animate-spin" />
     </div>
   </div>
 </template>
